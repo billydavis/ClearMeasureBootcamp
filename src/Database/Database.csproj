@@ -92,6 +92,7 @@
     <Content Include="scripts\AliaSQL.exe" />
     <Content Include="scripts\Create\placeholder.txt" />
     <Content Include="scripts\Seed\placeholder.txt" />
+    <Content Include="scripts\TestData\0001-Test-Employees.sql" />
     <Content Include="scripts\Update\0001-Create-Role-Table.sql" />
     <Content Include="scripts\Update\0002-Create-Employee-Table.sql" />
     <Content Include="scripts\Update\0003-Create-EmployeeRoles-Table.sql" />
@@ -106,9 +107,7 @@
     <Content Include="scripts\Update\0012-Create-MostRecentExpenseReportFact-View.sql" />
     <Content Include="scripts\Update\0011-Create-ExpenseReportFact-Table.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="scripts\TestData\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
