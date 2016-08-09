@@ -6,7 +6,12 @@ $hibernateConfig = "$path\bin\hibernate.cfg.xml"
 $integratedSecurity = "Integrated Security=true"
 $DatabaseServer = $OctopusParameters["DatabaseServer"]
 $DatabaseName = $OctopusParameters["DatabaseName"]
-$connection_string = "server=$DatabaseServer;database=$DatabaseName;$integratedSecurity;"
+
+$DatabaseUser = $OctopusParameters["DatabaseUser"]
+$DatabasePassword = $OctopusParameters["DatabasePassword"]
+
+$connection_string = "server=$DatabaseServer;database=$DatabaseName;User ID=$DatabaseUser;Password=$DatabasePassword;Encrypt=True;TrustServerCertificate=True;Connection Timeout=60;"
+#$connection_string = "server=$DatabaseServer;database=$DatabaseName;$integratedSecurity;"
 #poke-xml $hibernateConfig "//e:property[@name = 'connection.connection_string']" $connection_string @{"e" = "urn:nhibernate-configuration-2.2"}
 
 $filePath = $hibernateConfig
