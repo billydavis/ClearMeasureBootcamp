@@ -6,7 +6,6 @@ $hibernateConfig = "$path\bin\hibernate.cfg.xml"
 $integratedSecurity = "Integrated Security=true"
 $DatabaseServer = $OctopusParameters["DatabaseServer"]
 $DatabaseName = $OctopusParameters["DatabaseName"]
-
 $DatabaseUser = $OctopusParameters["DatabaseUser"]
 $DatabasePassword = $OctopusParameters["DatabasePassword"]
 
